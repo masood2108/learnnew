@@ -6,23 +6,19 @@ document.addEventListener("DOMContentLoaded", function() {
     const sendBtn = document.getElementById("send-btn");
     const questionBoxes = document.querySelector(".question-boxes");
 
-    let introDisplayed = false; // Flag to track if introduction message has been displayed
+    let introDisplayed = false; 
 
-    // Predefined questions and answers
     const predefinedQuestions = [
         { question: "What is AIML?", answer: "AIML stands for Artificial Intelligence Markup Language. It's an XML-based markup language used for creating chatbots and conversational agents." },
         { question: "How can I learn AIML?", answer: "You can learn AIML through online courses, tutorials, and documentation available on various platforms." },
         { question: "Are there any online courses for AIML?", answer: "Yes, there are several online courses available for learning AIML. You can explore platforms like Coursera, Udemy, and edX for AIML courses." }
-        // Add more predefined questions and answers here
     ];
 
-    // Display predefined questions
     predefinedQuestions.forEach(question => {
         const questionBox = createQuestionBox(question.question);
         questionBoxes.appendChild(questionBox);
     });
 
-    // Send user query to chatbot
     sendBtn.addEventListener("click", function() {
         const userQuery = userQueryInput.value.trim();
         if (userQuery !== "") {
@@ -32,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // Handle user query
     function handleUserQuery(query) {
         const predefinedAnswer = predefinedQuestions.find(q => q.question.toLowerCase() === query.toLowerCase());
         if (predefinedAnswer) {
@@ -42,17 +37,14 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Function to append message to chatbot container
     function appendMessage(message, sender) {
         const messageElement = document.createElement("div");
         messageElement.className = sender === "user" ? "user-message" : "chatbot-message";
         messageElement.innerText = message;
         chatbotMessages.appendChild(messageElement);
-        // Scroll to bottom
         chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
     }
 
-    // Function to create question box
     function createQuestionBox(question) {
         const questionBox = document.createElement("div");
         questionBox.className = "question-box";
@@ -64,7 +56,6 @@ document.addEventListener("DOMContentLoaded", function() {
         return questionBox;
     }
 
-    // Toggle chatbot container visibility
     chatbotIcon.addEventListener("click", function() {
         chatbotContainer.style.display = chatbotContainer.style.display === "block" ? "none" : "block";
         if (!introDisplayed) {
