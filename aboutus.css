@@ -3,7 +3,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F4DECB;
+    background-color: #f5f5f5;
 }
 
 .container {
@@ -53,7 +53,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #F4DECB; /* Light sand color on hover */
+    color: #f5f5f5; /* Light sand color on hover */
 }
 
 /* Section styles */

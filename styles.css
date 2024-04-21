@@ -1,5 +1,5 @@
 body {
-    background-color: #F4DECB;
+    background-color: #f5f5f5;
     font-family: 'Arial', sans-serif;
     color: #49274A;
 }
@@ -24,7 +24,7 @@ body {
 }
 
 .custom-navbar .navbar-nav .nav-link:hover {
-    color: #F4DECB;
+    color: #f5f5f5;
 }
 
 .custom-navbar .search-bar {
@@ -34,7 +34,7 @@ body {
 }
 
 .custom-navbar .search-bar input[type="text"] {
-    background-color: #F8EEE7;
+    background-color:#f5f5f5;
     color: #49274A;
     border: none;
     padding: 8px;
@@ -44,7 +44,7 @@ body {
 }
 
 .custom-navbar .search-bar .search-btn {
-    background-color: #F4DECB;
+    background-color: #f5f5f5;
     border: none;
     color: #49274A;
     padding: 8px 12px;
@@ -55,7 +55,7 @@ body {
 
 .custom-navbar .search-bar .search-btn:hover {
     background-color: #94618E;
-    color: #F8EEE7;
+    color: #f5f5f5;
 }
 
 @media (max-width: 768px) {
@@ -77,7 +77,7 @@ body {
 /* Section Styles */
 .section-container {
     padding: 40px;
-    background: linear-gradient(135deg, #F8EEE7 0%, #F4DECB 100%);
+    background: linear-gradient(135deg, #f5f5f5 0%, #f5f5f5 100%);
     border-radius: 15px;
     border: 2px solid #94618E;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
@@ -175,17 +175,17 @@ body {
 
 .quick-links a {
     text-decoration: none;
-    color: #F8EEE7;
+    color: #f5f5f5;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .quick-links a:hover {
-    color: #F4DECB;
+    color: #f5f5f5;
 }
 
 .social-links {
-    color: #F8EEE7;
+    color: #f5f5f5;
 }
 
 .social-links p {
@@ -264,7 +264,7 @@ body {
     overflow-y: auto;
     border: 1px solid #ccc;
     border-radius: 10px;
-    background-color: #F8EEE7; 
+    background-color: #f5f5f5; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000; 
 }
@@ -287,7 +287,7 @@ body {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #F4DECB; 
+    background-color:#f5f5f5; 
     font-size: 14px;
 }
 

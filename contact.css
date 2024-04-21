@@ -3,7 +3,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F4DECB;
+    background-color: #f5f5f5;
 }
 
 .container {
@@ -46,7 +46,7 @@ body {
 
 .nav-link:hover {
     text-decoration: none;
-    color: #F4DECB;
+    color: #f5f5f5;
 }
 
 /* Footer styles */
