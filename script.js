@@ -11,7 +11,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const predefinedQuestions = [
         { question: "What is AIML?", answer: "AIML stands for Artificial Intelligence Markup Language. It's an XML-based markup language used for creating chatbots and conversational agents." },
         { question: "How can I learn AIML?", answer: "You can learn AIML through online courses, tutorials, and documentation available on various platforms." },
-        { question: "Are there any online courses for AIML?", answer: "Yes, there are several online courses available for learning AIML. You can explore platforms like Coursera, Udemy, and edX for AIML courses." }
+        { question: "Are there any online courses for AIML?", answer: "Yes, there are several online courses available for learning AIML. You can explore platforms like Coursera, Udemy, and edX for AIML courses." },
+        { question: "How can I reach you?", answer: "You can reach us through the following contact details:\nPhone: 9676439719\nEmail: learnnew3477@gmail.com\nAddress: Head Quarters, Hyderabad" }
     ];
 
     predefinedQuestions.forEach(question => {
