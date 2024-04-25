@@ -1,13 +1,32 @@
+/* Font styles */
 body {
     background-color: #f5f5f5;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #49274A;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: #49274A;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #49274A;
+}
+
+.bold-text {
+    font-weight: bold;
 }
 
 /* Navbar Styles */
 .custom-navbar {
     background-color: #49274A;
     padding: 15px 0;
+    animation: slideInFromTop 1s forwards;
 }
 
 .custom-navbar .navbar-brand img {
@@ -85,6 +104,7 @@ body {
     margin-top: 40px;
     position: relative;
     overflow: hidden;
+    animation: slideInFromLeft 1s forwards;
 }
 
 .section-container:before {
@@ -113,6 +133,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    animation: fadeInUp 1s forwards;
 }
 
 /* Description style */
@@ -122,6 +143,8 @@ body {
     color: #49274A;
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    animation: fadeInUp 1s forwards;
 }
 
 .img-fluid {
@@ -131,10 +154,7 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     margin: 40px auto;
     transition: transform 0.3s ease-in-out;
-}
-
-.img-fluid:hover {
-    transform: scale(1.05);
+    animation: zoomIn 1s forwards;
 }
 /* Footer Styles */
 .footer {
@@ -144,6 +164,7 @@ body {
     align-items: center;
     justify-content: space-between;
     border-top: 2px solid #94618E;
+    animation: slideInFromBottom 1s forwards;
 }
 
 .footer-logo img {
@@ -185,11 +206,12 @@ body {
 }
 
 .social-links {
-    color: #f5f5f5;
+    color: #f4ebeb;
 }
 
 .social-links p {
     margin-bottom: 10px;
+    color: #fff;
 }
 
 .social-icons {
@@ -210,7 +232,7 @@ body {
     .footer {
         padding: 20px;
         flex-direction: column;
-        align-items: flex-start;
+        text-align: center;
     }
 
     .footer-logo img {
@@ -218,18 +240,30 @@ body {
         margin-bottom: 15px;
     }
 
+    .quick-links ul {
+        margin-bottom: 5px;
+    }
+
     .quick-links ul li {
-        margin-right: 15px;
+        margin-right: 20px;
+        justify-content: center;
+        margin-bottom: 10px;
     }
 
-    .quick-links a {
-        font-size: 12px;
+    .social-icons {
+        justify-content: center;
+    }
+    
+    .social-icons a {
+        margin-right: 10px;
+        margin-bottom: 10px;
     }
 
-    .social-icons a img {
-        width: 25px;
+    .social-icons a:last-child {
+        margin-right: 0;
     }
 }
+
 
 /* Chatbot icon styles */
 .chatbot-icon {
@@ -342,55 +376,8 @@ body {
         font-size: 1rem;
         margin-bottom: 10px;
     }
-@media screen and (max-width: 768px) {
-    .about-section .col-md-6 {
-        flex: 0 0 100%;
-        margin-bottom: 30px;
-    }
 }
-    .chatbot-icon {
-        bottom: 10px;
-        right: 10px;
-    }
 
-    .chatbot-icon img {
-        width: 40px;
-        height: 40px;
-    }
-    .chatbot-container {
-        width: 90%;
-        bottom: 60px;
-        right: 5%;
-    }
-    .question-boxes {
-        padding: 5px;
-    }
-
-    .question-box {
-        margin-right: 5px;
-        margin-bottom: 5px;
-        padding: 5px;
-        font-size: 12px;
-    }
-
-    .user-query {
-        margin: 5px;
-        padding: 8px;
-        font-size: 12px;
-    }
-
-    .send-btn {
-        margin: 0 5px 5px;
-        padding: 8px;
-        font-size: 12px;
-    }
-
-    .user-message, .chatbot-message {
-        margin: 2px 5px;
-        padding: 8px;
-        font-size: 12px;
-    }
-}
 .video-wrapper {
     position: relative;
     overflow: hidden;
@@ -496,3 +483,51 @@ body {
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15); 
 }
 
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
