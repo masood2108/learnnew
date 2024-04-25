@@ -158,7 +158,7 @@ h3.subsection-title {
 }
 
 p.section-description {
-    color: #646464;
+    color: #050000;
 }
 
 ul.contact-list,
@@ -179,4 +179,14 @@ ul.social-links li a {
 
 ul.social-links li a:hover {
     color: #94618E;
+}
+
+/* Animation */
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
